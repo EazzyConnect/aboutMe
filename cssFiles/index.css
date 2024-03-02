@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 section{
@@ -12,10 +12,10 @@ section{
 /* INTRO-HEADING */
 
 .intro{
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     padding: 40px;
+    height: 100vh;
 }
 
 .menuBar{
@@ -30,19 +30,163 @@ img{
 
 ul{
     display: flex;
+    align-items: center;
 }
 
 li{
     list-style: none;
     margin-right: 20px;
+    font-weight: bold;
 }
 
 a{
     text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 .icon{
     margin-right: 5px;
 }
 
+.menuLogo{
+    width: 20px;
+}
+
 /* INTRO-ABOUT-ME */
+.aboutMe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* .leftAbtMe{
+    width: 50%;
+} */
+
+/* .rightAbtMe{
+    width: 50%;
+} */
+
+#welcomeText{
+    font-size: 65px;
+    overflow: hidden;
+    /* border-right: .15em solid orange; */
+    white-space: nowrap;
+    animation: typing 2s steps(60, end);
+}
+
+@keyframes typing {
+    from{width: 0;}
+    to{width: 100%;}
+}
+
+.myPix{
+    width: 500px;
+    border: 3px solid rgb(56, 3, 3);
+    border-radius: 50%;
+}
+
+span{
+    background-image: linear-gradient(rgba(1, 7, 39, 0.9), rgba(251, 6, 6, 0.9));
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/* TOOLS & PROJECTS */
+.tools, .projects{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.toolsHeading, .projectHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.description{
+    font-size: 20px;
+}
+
+.techTools{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 0 15%;
+    margin-bottom: 50px;
+}
+
+#cvApp, #movieApp{
+    width: 418px;
+    height: 500px;
+    border-radius: 10px 10px 0 0;
+}
+
+.projectSamples{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 10px;
+}
+
+.projectBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(1, 7, 39, 0.9);
+    border-radius: 10px;
+}
+
+.viewProject{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.projectDesc{
+    padding: 0 10px;
+}
+
+
+
+
+@media only screen and (max-width: 700px){
+    #welcomeText{
+        font-size: 35px;
+    }
+
+    .myPix{
+        width: 300px;
+    }
+
+    .projectSamples{
+    display: flex;
+    flex-direction: column;
+    }
+
+    #cvApp, #movieApp{
+        width: 100%;
+    }
+
+    .intro{
+     height: 65vh;   
+    }
+}
