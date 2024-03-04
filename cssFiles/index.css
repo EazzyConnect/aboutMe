@@ -1,63 +1,65 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* 'Playfair Display', serif */
 }
 
-section{
+section {
     background-color: whitesmoke;
+    padding: 10px 0;
 }
 
 /* INTRO-HEADING */
 
-.intro{
+.intro {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 5px 40px;
     height: 100vh;
 }
 
-.menuBar{
+.menuBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-img{
+img {
     width: 50px;
 }
 
-ul{
+ul {
     display: flex;
     align-items: center;
 }
 
-li{
+li {
     list-style: none;
     margin-right: 20px;
     font-weight: bold;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-.icon{
+.icon {
     margin-right: 5px;
 }
 
-.menuLogo{
+.menuLogo {
     width: 20px;
 }
 
 /* INTRO-ABOUT-ME */
-.aboutMe{
+.aboutMe {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +74,7 @@ a:hover{
     width: 50%;
 } */
 
-#welcomeText{
+#welcomeText {
     font-size: 65px;
     overflow: hidden;
     /* border-right: .15em solid orange; */
@@ -81,17 +83,22 @@ a:hover{
 }
 
 @keyframes typing {
-    from{width: 0;}
-    to{width: 100%;}
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
-.myPix{
+.myPix {
     width: 500px;
     border: 3px solid rgb(56, 3, 3);
     border-radius: 50%;
 }
 
-span{
+span {
     background-image: linear-gradient(rgba(1, 7, 39, 0.9), rgba(251, 6, 6, 0.9));
     background-clip: text;
     color: transparent;
@@ -100,13 +107,21 @@ span{
 }
 
 /* TOOLS & PROJECTS */
-.tools, .projects{
+.tools,
+.projects {
     display: flex;
     flex-direction: column;
     padding: 40px;
 }
 
-.toolsHeading, .projectHeading{
+.tools {
+    box-shadow: 5px 5px 10px rgba(2, 16, 95, 0.9);
+    margin: 0 40px;
+    border-radius: 10px;
+}
+
+.toolsHeading,
+.projectHeading {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,16 +129,16 @@ span{
     margin-bottom: 40px;
 }
 
-.title{
+.title {
     font-size: 30px;
     margin-bottom: 5px;
 }
 
-.description{
+.description {
     font-size: 20px;
 }
 
-.techTools{
+.techTools {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -133,60 +148,125 @@ span{
     margin-bottom: 50px;
 }
 
-#cvApp, #movieApp{
+#cvApp,
+#project3,
+#project4 {
     width: 418px;
-    height: 500px;
+    height: 70%;
+    /* height: 50px; */
     border-radius: 10px 10px 0 0;
 }
 
-.projectSamples{
+.projectSamples {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 10px;
 }
 
-.projectBox{
+.projectBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(1, 7, 39, 0.9);
     border-radius: 10px;
+    height: 700px;
 }
 
-.viewProject{
+.viewProject {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding-right: 20px;
+    margin: 10px 0;
 }
 
-.projectDesc{
+.projectDesc {
     padding: 0 10px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text1 {
+    margin: 10px 0;
+}
+
+.text2 {
+    margin: 10px 0;
+}
+
+.text3 {
+    margin: 20px 0;
 }
 
 
+/* OUTRO */
+.outro {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+}
+
+.topOutro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoBtm {
+    width: 30px;
+}
+
+.rightOutro {
+    display: flex;
+    gap: 50px;
+    font-weight: bold;
+}
+
+#logoRightOutro {
+    display: flex;
+    gap: 10px;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 20px 0;
+}
+
+.bottomOutro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightBottom {
+    display: flex;
+    gap: 10px;
+}
 
 
-@media only screen and (max-width: 700px){
-    #welcomeText{
+/* RESPONSIVENESS */
+@media only screen and (max-width: 700px) {
+    #welcomeText {
         font-size: 35px;
     }
 
-    .myPix{
+    .myPix {
         width: 300px;
     }
 
-    .projectSamples{
-    display: flex;
-    flex-direction: column;
+    .projectSamples {
+        display: flex;
+        flex-direction: column;
     }
 
-    #cvApp, #movieApp{
+    #cvApp,
+    #movieApp {
         width: 100%;
     }
 
-    .intro{
-     height: 65vh;   
+    .intro {
+        height: 65vh;
     }
 }

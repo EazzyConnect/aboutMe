@@ -1,0 +1,177 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ /* 'Playfair Display', serif */
+}
+
+section {
+ background-color: whitesmoke;
+ padding: 10px 0;
+}
+
+/* MENU-BAR */
+
+.menuBar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+#myLogo {
+ width: 50px;
+}
+
+ul {
+ display: flex;
+ align-items: center;
+}
+
+li {
+ list-style: none;
+ margin-right: 20px;
+ font-weight: bold;
+}
+
+a {
+ text-decoration: none;
+ color: black;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+.icon {
+ margin-right: 5px;
+}
+
+.menuLogo {
+ width: 20px;
+}
+
+/* ABOUT-ME */
+.container {
+ display: flex;
+ flex-direction: column;
+ padding: 40px;
+ margin-top: 30px;
+ width: 70%;
+ margin-bottom: 50px;
+}
+
+/* .abtMe {
+ box-shadow: 0 0 10px rgba(2, 16, 95, 0.9);
+ padding: 50px 10px;
+ border-radius: 10px;
+} */
+
+#abtTitle {
+ margin-bottom: 20px;
+ text-decoration: underline;
+}
+
+#abtText {
+ margin-bottom: 40px;
+}
+
+/* EXPERIENCE */
+#expTitle {
+ margin-bottom: 20px;
+ text-decoration: underline;
+}
+
+.topExp {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-bottom: 10px;
+}
+
+.time {
+ background-color: rgb(166, 241, 216);
+ color: green;
+ padding: 5px;
+ border-radius: 10px;
+}
+
+.bottomExp {
+ display: flex;
+ justify-content: space-between;
+}
+
+.leftBtmExp {
+ display: flex;
+ width: 40%;
+ justify-content: space-between;
+}
+
+/* OUTRO */
+.outro {
+ display: flex;
+ flex-direction: column;
+ margin: 0 40px;
+}
+
+.topOutro {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+#logoBtm {
+ width: 30px;
+}
+
+.rightOutro {
+ display: flex;
+ gap: 50px;
+ font-weight: bold;
+}
+
+#logoRightOutro {
+ display: flex;
+ gap: 10px;
+}
+
+hr {
+ border: 1px solid black;
+ margin: 20px 0;
+}
+
+.bottomOutro {
+ display: flex;
+ justify-content: space-between;
+}
+
+.rightBottom {
+ display: flex;
+ gap: 10px;
+}
+
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 700px) {
+ #welcomeText {
+  font-size: 35px;
+ }
+
+ .myPix {
+  width: 300px;
+ }
+
+ .projectSamples {
+  display: flex;
+  flex-direction: column;
+ }
+
+ #cvApp,
+ #movieApp {
+  width: 100%;
+ }
+
+ .intro {
+  height: 65vh;
+ }
+}
