@@ -136,10 +136,12 @@ span {
 .title {
     font-size: 30px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .description {
     font-size: 20px;
+    text-align: center;
 }
 
 .techTools {
@@ -250,11 +252,22 @@ hr {
     gap: 10px;
 }
 
+.hideMenu {
+    display: none;
+}
+
 
 /* RESPONSIVENESS */
 @media only screen and (max-width: 700px) {
     #welcomeText {
         font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
     }
 
     .myPix {
@@ -267,11 +280,88 @@ hr {
     }
 
     #cvApp,
-    #movieApp {
+    #project3,
+    #project4 {
         width: 100%;
     }
 
-    .intro {
-        height: 65vh;
+    .tools {
+        padding: 10px;
+    }
+
+    .techTools {
+        padding: 0 5%;
+        /* grid-template-columns: repeat(3, 1fr); */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .outro {
+        padding: 5px;
+    }
+
+    .topOutro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logoBtm {
+        display: none;
+    }
+
+    .rightOutro {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 90%;
+        font-size: small;
+    }
+
+    .bottomOutro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftBottom {
+        display: none;
+    }
+
+    .rightBottom {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hideMenu {
+        display: block;
+        font-size: 25px;
+    }
+
+    ul {
+        background: rgb(182, 180, 180);
+        position: fixed;
+        right: -200px;
+        top: 0;
+        width: 120px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: right 0.5s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        display: block;
+        margin: 15px;
+    }
+
+    ul .hideMenu {
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        cursor: pointer;
     }
 }

@@ -166,4 +166,82 @@ hr {
 
 
 /* RESPONSIVENESS */
-@media only screen and (max-width: 700px) {}
+@media only screen and (max-width: 700px) {
+ .contactMe {
+  width: 90%;
+ }
+
+ .btn {
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 30%;
+ }
+
+ .outro {
+  padding: 5px;
+ }
+
+ .topOutro {
+  display: flex;
+  flex-direction: column;
+ }
+
+ #logoBtm {
+  display: none;
+ }
+
+ .rightOutro {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  font-size: small;
+ }
+
+ .bottomOutro {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .leftBottom {
+  display: none;
+ }
+
+ .rightBottom {
+  display: flex;
+  justify-content: center;
+ }
+
+ .hideMenu {
+  display: block;
+  font-size: 25px;
+ }
+
+ ul {
+  background: rgb(182, 180, 180);
+  position: fixed;
+  right: -200px;
+  top: 0;
+  width: 120px;
+  height: 100vh;
+  padding-top: 50px;
+  transition: right 0.5s;
+  display: flex;
+  flex-direction: column;
+ }
+
+ li {
+  display: block;
+  margin: 15px;
+ }
+
+ ul .hideMenu {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  cursor: pointer;
+ }
+}

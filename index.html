@@ -21,7 +21,7 @@
         <div class="intro">
             <div class="menuBar">
                 <img id="myLogo" src="./images/myLogo.png" alt="logo">
-                <ul>
+                <ul id="sideMenu">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./htmlFiles/about.html">About</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -41,7 +41,9 @@
                             <img class="menuLogo" src="./images/linkedIn.png" alt="linkedIn"></i>
                         </a>
                     </li>
+                    <i class="fa-solid fa-circle-xmark hideMenu" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars hideMenu" onclick="openMenu()"></i>
             </div>
             <div class="aboutMe">
                 <div class="leftAbtMe">
@@ -187,6 +189,17 @@
                 </div>
             </div>
         </div>
+
+
+        <script>
+            const menuBar = document.getElementById("sideMenu");
+            function openMenu() {
+                menuBar.style.right = "0";
+            }
+            function closeMenu() {
+                menuBar.style.right = "-200px";
+            }
+        </script>
 
     </section>
 
