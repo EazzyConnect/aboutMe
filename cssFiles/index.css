@@ -103,9 +103,10 @@ a:hover {
 }
 
 span {
-    background-image: linear-gradient(rgba(1, 7, 39, 0.9), rgba(251, 6, 6, 0.9));
+    /* background-image: linear-gradient(rgba(1, 7, 39, 0.9), rgba(251, 6, 6, 0.9));
     background-clip: text;
-    color: transparent;
+    color: transparent; */
+    color: rgb(239, 85, 85);
     font-weight: bolder;
     font-size: larger;
 }
