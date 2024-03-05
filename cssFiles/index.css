@@ -156,8 +156,7 @@ span {
 #project3,
 #project4 {
     width: 418px;
-    height: 70%;
-    /* height: 50px; */
+    height: 65%;
     border-radius: 10px 10px 0 0;
 }
 
@@ -175,7 +174,7 @@ span {
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(1, 7, 39, 0.9);
     border-radius: 10px;
-    height: 700px;
+    height: 600px;
 }
 
 .viewProject {
@@ -187,7 +186,7 @@ span {
 
 .projectDesc {
     padding: 0 10px;
-    height: 30%;
+    height: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
