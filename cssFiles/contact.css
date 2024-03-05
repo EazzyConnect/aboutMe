@@ -8,7 +8,12 @@
 
 section {
  background-color: whitesmoke;
- padding-top: 10px;
+}
+
+.mainContainer {
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
 }
 
 /* MENU-BAR */
@@ -18,6 +23,7 @@ section {
  justify-content: space-between;
  align-items: center;
  padding: 0 40px;
+ height: 15%;
 }
 
 #myLogo {
@@ -52,71 +58,65 @@ a:hover {
  width: 20px;
 }
 
-/* ABOUT-ME */
-.container {
+/* CONTACT-ME */
+.contactMe {
+ height: 65%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 60%;
+ padding: 20px 40px;
+ gap: 10px;
+}
+
+.contactLeft {
+ width: 65%;
+}
+
+.contactRight {
+ width: 35%;
+}
+
+#sendMsg {
+ margin-bottom: 5px;
+}
+
+form {
  display: flex;
  flex-direction: column;
- padding: 40px;
- margin-top: 30px;
- width: 70%;
- margin-bottom: 50px;
+ width: 100%;
+ gap: 5px;
 }
 
-/* .abtMe {
- box-shadow: 0 0 10px rgba(2, 16, 95, 0.9);
- padding: 50px 10px;
- border-radius: 10px;
-} */
-
-#abtTitle {
- margin-bottom: 20px;
- text-decoration: underline;
+input,
+textarea {
+ border: 0;
+ background: #acabab;
+ padding: 10px;
+ color: black;
+ font-size: 18px;
+ border-radius: 6px;
 }
 
-#abtText {
- margin-bottom: 40px;
- text-align: justify;
+.btn {
+ padding: 10px;
+ font-size: 20px;
+ font-weight: bold;
+ width: 30%;
+ border-radius: 6px;
 }
 
-/* EXPERIENCE, EDUCATION, CERTIFICATE */
-.experience,
-.certification,
-.education {
- margin-bottom: 40px;
+.btn:hover {
+ background-color: rgb(97, 97, 244);
+ color: whitesmoke;
+ cursor: pointer;
 }
 
-#expTitle,
-#eduTitle {
- margin-bottom: 20px;
- text-decoration: underline;
-}
-
-.topExp,
-.topEdu {
- display: flex;
- align-items: center;
- justify-content: space-between;
- margin-bottom: 10px;
-}
-
-.time {
- background-color: rgb(166, 241, 216);
- color: green;
- padding: 5px;
- border-radius: 10px;
-}
-
-.bottomExp,
-.bottomEdu {
- display: flex;
- justify-content: space-between;
-}
-
-.leftBtmExp,
-.leftBtmEdu {
- display: flex;
- width: 40%;
- justify-content: space-between;
+#msg {
+ color: black;
+ font-weight: bold;
+ font-size: 18px;
+ display: block;
 }
 
 /* OUTRO */
@@ -125,6 +125,7 @@ a:hover {
  flex-direction: column;
  padding: 10px 40px;
  background-color: rgb(232, 230, 230);
+ height: 20%;
 }
 
 .topOutro {
@@ -165,11 +166,4 @@ hr {
 
 
 /* RESPONSIVENESS */
-@media only screen and (max-width: 700px) {
-
- #cvApp,
- #movieApp {
-  width: 100%;
- }
-
-}
+@media only screen and (max-width: 700px) {}
