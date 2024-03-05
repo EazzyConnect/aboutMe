@@ -104,6 +104,7 @@ a:hover {
  color: green;
  padding: 5px;
  border-radius: 10px;
+ text-align: center;
 }
 
 .bottomExp,
