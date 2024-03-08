@@ -151,12 +151,17 @@ span {
 
 .techTools {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     justify-items: center;
     align-items: center;
     padding: 0 15%;
     margin-bottom: 50px;
+}
+
+.techImg {
+    width: 80px;
+    height: 80px;
 }
 
 #cvApp,
@@ -201,7 +206,7 @@ span {
 }
 
 .text1 {
-    margin: 5px 0;
+    margin: 15px 0;
 }
 
 .text2 {
