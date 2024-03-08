@@ -22,8 +22,9 @@ section {
  display: flex;
  justify-content: space-between;
  align-items: center;
- padding: 0 40px;
- height: 15%;
+ /* height: 15%; */
+ padding: 20px 40px;
+ background-color: rgb(232, 230, 230);
 }
 
 #myLogo {
@@ -64,7 +65,7 @@ a:hover {
  display: flex;
  justify-content: space-between;
  align-items: center;
- width: 60%;
+ /* width: 60%; */
  padding: 20px 40px;
  gap: 10px;
 }
@@ -228,6 +229,7 @@ hr {
   background: rgb(182, 180, 180);
   position: fixed;
   right: -200px;
+  /* right: 0; */
   top: 0;
   width: 120px;
   height: 100vh;
