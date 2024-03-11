@@ -15,12 +15,13 @@ html {
 }
 
 /* INTRO-HEADING */
-
+/* 0, 153, 255 */
 .intro {
     display: flex;
     flex-direction: column;
     /* padding: 5px 40px; */
     height: 100vh;
+    background-image: linear-gradient(rgb(65, 139, 207, 0.9), rgba(215, 218, 220, 0.9));
 }
 
 .menuBar {
@@ -44,6 +45,7 @@ li {
     list-style: none;
     margin-right: 20px;
     font-weight: bold;
+    font-size: larger;
 }
 
 a {
@@ -102,8 +104,9 @@ a:hover {
 .myPix {
     /* width: 500px; */
     width: 100%;
-    border: 3px solid rgb(56, 3, 3);
+    border: 3px solid whitesmoke;
     border-radius: 50%;
+    background-color: rgb(200, 198, 198);
 }
 
 span {
@@ -116,26 +119,22 @@ span {
 }
 
 /* TOOLS & PROJECTS */
-.tools,
-#projects {
+.tools {
+    box-shadow: 2px 5px 10px rgba(2, 16, 95, 0.9);
+    margin: 100px 40px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     padding: 40px;
 }
 
-.tools {
-    box-shadow: 5px 5px 10px rgba(2, 16, 95, 0.9);
-    margin: 0 40px;
-    border-radius: 10px;
-}
-
-.toolsHeading,
-.projectHeading {
+.toolsHeading {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
+    padding: 50px;
 }
 
 .title {
@@ -164,12 +163,29 @@ span {
     height: 80px;
 }
 
+#projects {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 100px 0;
+}
+
+.projectHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    padding: 50px;
+    background-image: linear-gradient(rgb(65, 139, 207, 0.9), rgba(245, 247, 247, 0.9));
+}
+
 #cvApp,
 #project3,
 #project4 {
     /* width: 418px; */
     width: 100%;
-    height: 65%;
+    height: 60%;
     border-radius: 10px 10px 0 0;
 }
 
@@ -177,7 +193,7 @@ span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap: 10px;
+    gap: 70px;
 }
 
 .projectBox {
@@ -190,32 +206,48 @@ span {
     height: 100%;
 }
 
-.viewProject {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 20px;
-    margin: 10px 0;
-}
 
 .projectDesc {
-    padding: 0 10px;
-    height: 35%;
+    padding: 16px;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.projectDescTop {
+    height: 60%;
+}
+
+.projectDescBtm {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
 .text1 {
     margin: 15px 0;
+    color: black;
 }
 
 .text2 {
     margin: 5px 0;
+    color: rgb(24, 24, 24);
+    text-align: justify;
 }
 
 .text3 {
     margin: 10px 0;
 }
+
+.viewProject {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px 0; */
+    margin-top: auto;
+}
+
 
 
 /* OUTRO */
@@ -224,6 +256,7 @@ span {
     flex-direction: column;
     padding: 10px 40px;
     background-color: rgb(232, 230, 230);
+    border-top: 2px solid grey;
 }
 
 .topOutro {
@@ -248,7 +281,7 @@ span {
 }
 
 hr {
-    border: 1px solid black;
+    border: 1px solid grey;
     margin: 20px 0;
 }
 
@@ -260,6 +293,11 @@ hr {
 .rightBottom {
     display: flex;
     gap: 10px;
+    font-size: large;
+}
+
+.bottomList {
+    font-size: large;
 }
 
 .hideMenu {
