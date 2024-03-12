@@ -101,6 +101,32 @@ a:hover {
     }
 }
 
+#textBottom {
+    font-size: large;
+    margin: 10px 0;
+}
+
+/* #hireBtn {
+    font-size: large;
+}
+
+#hireBtn:hover {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    width: 20%;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(232, 230, 230);
+}
+
+button:hover {
+    background-color: rgb(65, 139, 207);
+    cursor: pointer;
+} */
+
 .myPix {
     /* width: 500px; */
     width: 100%;
