@@ -160,7 +160,7 @@ hr {
 .bottomOutro {
  display: flex;
  align-items: center;
- justify-content: center;
+ justify-content: left;
  font-size: large;
  gap: 10px;
  margin-top: 30px;
@@ -191,6 +191,7 @@ hr {
  .bottomOutro {
   font-size: medium;
   margin-top: 0;
+  justify-content: center;
  }
 
  .rightOutro {

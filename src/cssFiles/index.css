@@ -309,7 +309,7 @@ span {
 .bottomOutro {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     font-size: large;
     gap: 10px;
     margin-top: 30px;
@@ -341,12 +341,17 @@ span {
     #welcomeText {
         font-size: 40px;
     }
+
+    .rightOutro {
+        gap: 0;
+    }
 }
 
 @media only screen and (max-width: 750px) {
     #welcomeText {
         font-size: 35px;
         margin-bottom: 20px;
+        text-wrap: wrap;
     }
 
     .aboutMe {
@@ -396,6 +401,7 @@ span {
     .bottomOutro {
         font-size: medium;
         margin-top: 0;
+        justify-content: center;
     }
 
     .rightOutro {
