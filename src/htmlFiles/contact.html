@@ -17,9 +17,11 @@
 <body>
 
   <section>
+
     <div class="mainContainer">
 
       <div class="menuBar">
+
         <img id="myLogo" src="/public/icons/myLogo.png" alt="logo">
         <ul id="sideMenu">
           <li><a href="/index.html">Home</a></li>
@@ -43,10 +45,13 @@
           <i class="fa-solid fa-circle-xmark hideMenu" onclick="closeMenu()"></i>
         </ul>
         <i class="fa-solid fa-bars hideMenu" onclick="openMenu()"></i>
+
       </div>
 
       <div class="contactMe">
+
         <div class="contactLeft">
+
           <h2 id="sendMsg">Send Message:</h2>
           <form name="submit-to-google-sheet">
             <input type="text" name="Name" placeholder="Full-Name" required>
@@ -54,52 +59,32 @@
             <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
             <button type="submit" class="btn">Submit</button>
           </form>
+
         </div>
+
         <div class="contactRight">
+
           <span id="msg"></span>
+
         </div>
 
       </div>
 
       <div class="outro">
 
-        <div class="topOutro">
+        <div class="leftOutro">
 
-          <div class="leftOutro">
-            <img id="logoBtm" src="/public/icons/myLogo.png" alt="logo">
-          </div>
-
-          <div class="rightOutro">
-
-            <h4>Contact Me: <a href="tel:+2348085202397"><i class="fa-solid fa-phone"></i> +2348085202397</a> </h4>
-            <h4> <a href="mailto:okon.isaiah.samuel@gmail.com"><i class="fa-solid fa-envelope"></i>
-                okon.isaiah.samuel@gmail.com</a></h4>
-
-            <div id="logoRightOutro">
-              <a href="https://github.com/EazzyConnect" target="_blank"><img class="menuLogo"
-                  src="/public/icons/github.png" alt="github"></a>
-              <a href="https://twitter.com/Izaya4real" target="_blank"><img class="menuLogo"
-                  src="/public/icons/twitter.png" alt="twitter"></a>
-              <a href="http://linkedin.com/in/isaiah-okon" target="_blank"><img class="menuLogo"
-                  src="/public/icons/linkedIn.png" alt="linkedIn"></a>
-            </div>
-
-          </div>
+          <h5>&copy 2024</h5>
+          <h5>IsaiahOkon</h5>
 
         </div>
 
-        <hr>
+        <div class="rightOutro">
 
-        <div class="bottomOutro">
-
-          <div class="leftBottom">
-
-          </div>
-
-          <div class="rightBottom">
-            <h5>&copy 2024</h5>
-            <h5>IsaiahOkon</h5>
-          </div>
+          <h4>Contact Me: </h4>
+          <h4><a href="tel:+2348085202397"><i class="fa-solid fa-phone"></i> +2348085202397</a> </h4>
+          <h4> <a href="mailto:okon.isaiah.samuel@gmail.com"><i class="fa-solid fa-envelope"></i>
+              okon.isaiah.samuel@gmail.com</a></h4>
 
         </div>
 
@@ -135,6 +120,7 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
+
   </section>
 
 </body>

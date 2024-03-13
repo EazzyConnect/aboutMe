@@ -40,6 +40,7 @@ li {
  list-style: none;
  margin-right: 20px;
  font-weight: bold;
+ font-size: larger;
 }
 
 a {
@@ -48,7 +49,11 @@ a {
 }
 
 a:hover {
- text-decoration: underline;
+ /* text-decoration: underline; */
+ background-color: #418BCF;
+ padding: 5px;
+ border-radius: 10px;
+ color: whitesmoke;
 }
 
 .icon {
@@ -61,11 +66,10 @@ a:hover {
 
 /* CONTACT-ME */
 .contactMe {
- height: 65%;
+ height: 75%;
  display: flex;
  justify-content: space-between;
  align-items: center;
- /* width: 60%; */
  padding: 20px 40px;
  gap: 10px;
 }
@@ -123,46 +127,32 @@ textarea {
 /* OUTRO */
 .outro {
  display: flex;
- flex-direction: column;
- padding: 10px 40px;
- background-color: rgb(232, 230, 230);
- height: 20%;
-}
-
-.topOutro {
- display: flex;
  justify-content: space-between;
  align-items: center;
+ padding: 30px 40px;
+ background-color: rgb(232, 230, 230);
+ border-top: 2px solid grey;
 }
 
-#logoBtm {
- width: 30px;
+.leftOutro {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ width: 30%;
+ font-size: larger;
 }
 
 .rightOutro {
  display: flex;
- gap: 50px;
+ align-items: center;
+ gap: 20px;
  font-weight: bold;
-}
-
-#logoRightOutro {
- display: flex;
- gap: 10px;
+ font-size: large;
 }
 
 hr {
  border: 1px solid black;
  margin: 20px 0;
-}
-
-.bottomOutro {
- display: flex;
- justify-content: space-between;
-}
-
-.rightBottom {
- display: flex;
- gap: 10px;
 }
 
 .hideMenu {
@@ -184,40 +174,26 @@ hr {
  }
 
  .outro {
-  padding: 5px;
+  padding: 20px 40px;
  }
 
- .topOutro {
+ .leftOutro {
   display: flex;
   flex-direction: column;
- }
-
- #logoBtm {
-  display: none;
+  align-items: flex-start;
+  gap: 5px;
+  font-size: medium;
  }
 
  .rightOutro {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  width: 90%;
+  /* width: 90%; */
   font-size: small;
- }
-
- .bottomOutro {
-  display: flex;
-  flex-direction: column;
- }
-
- .leftBottom {
-  display: none;
- }
-
- .rightBottom {
-  display: flex;
-  justify-content: center;
  }
 
  .hideMenu {
@@ -225,11 +201,14 @@ hr {
   font-size: 25px;
  }
 
- ul {
+ .hideMenu:hover {
+  cursor: pointer;
+ }
+
+ #sideMenu {
   background: rgb(182, 180, 180);
   position: fixed;
   right: -200px;
-  /* right: 0; */
   top: 0;
   width: 120px;
   height: 100vh;

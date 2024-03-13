@@ -33,6 +33,7 @@ li {
  list-style: none;
  margin-right: 20px;
  font-weight: bold;
+ font-size: larger;
 }
 
 a {
@@ -41,7 +42,11 @@ a {
 }
 
 a:hover {
- text-decoration: underline;
+ /* text-decoration: underline; */
+ background-color: #418BCF;
+ padding: 5px;
+ border-radius: 10px;
+ color: whitesmoke;
 }
 
 .icon {
@@ -121,47 +126,44 @@ a:hover {
 }
 
 /* OUTRO */
-.outro {
- display: flex;
- flex-direction: column;
- padding: 10px 40px;
- background-color: rgb(232, 230, 230);
-}
-
-.topOutro {
- display: flex;
- justify-content: space-between;
- align-items: center;
-}
-
-#logoBtm {
- width: 30px;
-}
-
-.rightOutro {
- display: flex;
- gap: 50px;
- font-weight: bold;
-}
-
-#logoRightOutro {
- display: flex;
- gap: 10px;
-}
 
 hr {
  border: 1px solid black;
  margin: 20px 0;
 }
 
-.bottomOutro {
+.outro {
  display: flex;
+ flex-direction: column;
+ padding: 30px 40px 10px 40px;
+ background-color: rgb(232, 230, 230);
+ border-top: 2px solid grey;
+}
+
+.topOutro {
+ display: flex;
+ align-items: center;
  justify-content: space-between;
 }
 
-.rightBottom {
+.bottomList {
+ font-size: medium;
+ margin-right: 10px;
+}
+
+.rightOutro {
  display: flex;
+ align-items: center;
  gap: 10px;
+}
+
+.bottomOutro {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: large;
+ gap: 10px;
+ margin-top: 30px;
 }
 
 .hideMenu {
@@ -172,18 +174,13 @@ hr {
 /* RESPONSIVENESS */
 @media only screen and (max-width: 750px) {
 
- /* #cvApp,
- #movieApp {
-  width: 100%;
- } */
-
  .container {
   width: 100%;
   margin-top: 10px;
  }
 
  .outro {
-  padding: 5px;
+  padding-top: 10px;
  }
 
  .topOutro {
@@ -191,32 +188,13 @@ hr {
   flex-direction: column;
  }
 
- #logoBtm {
-  display: none;
+ .bottomOutro {
+  font-size: medium;
+  margin-top: 0;
  }
 
  .rightOutro {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 90%;
-  font-size: small;
- }
-
- .bottomOutro {
-  display: flex;
-  flex-direction: column;
- }
-
- .leftBottom {
   display: none;
- }
-
- .rightBottom {
-  display: flex;
-  justify-content: center;
  }
 
  .hideMenu {
@@ -224,11 +202,14 @@ hr {
   font-size: 25px;
  }
 
- ul {
+ .hideMenu:hover {
+  cursor: pointer;
+ }
+
+ #sideMenu {
   background: rgb(182, 180, 180);
   position: fixed;
   right: -200px;
-  /* right: 0; */
   top: 0;
   width: 120px;
   height: 100vh;
