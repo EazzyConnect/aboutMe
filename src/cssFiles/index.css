@@ -349,9 +349,9 @@ span {
 
 @media only screen and (max-width: 750px) {
     #welcomeText {
-        font-size: 35px;
+        font-size: 25px;
         margin-bottom: 20px;
-        text-wrap: wrap;
+        /* text-wrap: wrap; */
     }
 
     .aboutMe {
@@ -361,7 +361,7 @@ span {
     }
 
     .myPix {
-        width: 300px;
+        width: 280px;
     }
 
     .projectSamples {
